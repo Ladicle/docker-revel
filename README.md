@@ -9,3 +9,10 @@ This repository provide Dockerfile for Revel.
 ```bash
 $ docker build -t revel .
 ```
+
+## How to use image
+1. Go to revel application path.
+1. Run the following command.
+```bash
+$ docker run -it --rm -v "$PWD":/go/src/[path-to-repo] -w /go/src/[path-to-repo] revel revel run [path-to-repo]
+```
